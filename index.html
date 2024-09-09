@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="./packages/css/styles.css">
+
+  <!--==================== Portfolio / Cards CSS ====================-->
+  <link rel="stylesheet" href="./packages/css/styleT.css">
+  <link rel="stylesheet" href="./packages/css/bootstrapT.css">
+  <link rel="stylesheet" href="./packages/css/styleP.css">
+  <link rel="stylesheet" href="./style_test.css">
+
+  <title>Karthick Nagaraj Portfolio</title>
+  <link rel="icon" href="./packages/images/Karthick-Nagaraj-Portfolio.png">
+</head>
+
+<body onload="myFunctionS()">
+
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      
+      <a href="#" class="nav__logo">Karthick N</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
+              <i class="uil uil-estate nav__icon"></i>Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i>About
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="uil uil-file-alt nav__icon"></i>Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#qua" class="nav__link">
+              <i class="uil uil-file-alt nav__icon"></i>Qualifications
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#Testimonial" class="nav__link">
+              <i class="uil uil-briefcase-alt nav__icon"></i>Testimonials
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+      <div class="nav__btns">
+        <!-- Theme change button -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content grid">
+          <!-- Social icons -->
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/karthick-nagarajan-44800710b/" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin"></i></a>
+            <a href="https://medium.com/@karthick965938" target="_blank" class="home__social-icon">
+                <i class="uil uil-medium-m"></i></a>
+            <a href="https://github.com/karthick965938" target="_blank" class="home__social-icon">
+              <i class="uil uil-github-alt"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=karthick965938@gmail.com" target="_blank"
+              class="home__social-icon">
+              <i class="uil uil-envelope-alt"></i></a>
+            <a href="https://www.google.com/maps/place/Chennai,+Tamil+Nadu" target="_blank" class="home__social-icon">
+              <i class="uil uil-location-pin-alt"></i></a>
+          </div>
+          <!-- Image oval shape -->
+          <div class="home__img">
+            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+              </mask>
+              <g mask="url(#mask0)">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                <image class="home__blob-img" x="" xlink:href="./packages/images/karthick.jpeg" />
+              </g>
+            </svg>
+          </div>
+          <!-- Intro small -->
+          <div class="home__data">
+            <h1 class="home__title">Hi, I'am Karthick</h1>
+            <h3 class="home__subtitle">Web/AI Developer</h3>
+            <p class="home__description">A dedicated Web and AI developer with more than 9 years of experience in creating websites and developing Generative AI projects.</p>
+          </div>
+        </div>
+
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll Down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" , id="about">
+      <h2 class="section__title">◜About Me◞</h2>
+      <span class="section__subtitle">⦿ My Introduction ⦿</span>
+      <div class="container">
+        <img src="packages/images/karthick_2.jpeg" alt="" class="about__img">
+
+        <div class="about__data">
+          <p class="about__description">
+          <div style="text-align: justify;" align="left">
+            ➤ Expertise in Dev and AI techniques, Ruby on Rails, Python, AI tools.<br>
+            ➤ I enjoy the journey with data, new people, AI-ML keys.<br>
+            ➤ Productive | Strategic thinker | Mentor | Motivated | Quick learner | Problem solver.<br>
+            ➤ I like to play cricket, carrom.
+          </div>
+          </p>
+          <div class="about__container container grid">
+          </div>
+
+
+          <div class="containerA" id="blur">
+            <div class="about__buttons">
+              <a download href="./packages/js/Karthick_Nagarajan_Resume.pdf" class="button button--flex">
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">◜Key Skills◞</h2>
+      <span class="section__subtitle">⦿ My Technical Expertise With Explorations ⦿</span>
+
+      <!-- <div class="skills__container container grid"> -->
+      <div class="about__container container grid">
+        <div>
+          <!--==================== SKILL-1 ====================-->
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-analytics skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Web Devlopment</h1>
+                <span class="skills__subtitle">Technologies | Modules | Languages</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Ruby, Rails, SQL</h3><span class="skills__number" ,
+                    style="font-size: 80%">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__python"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React JS, Bootstrap, HTML, Javascrip</h3><span class="skills__number"
+                    style="font-size: 80%">68%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__DS"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Python, Flask</h3><span class="skills__number"
+                    style="font-size: 80%">68%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__DS"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Pandas, NumPy, Scikit-learn, AutoML, SciPy</h3><span class="skills__number" style="font-size: 80%">75%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__pandas"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--==================== SKILLS 2 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-cloud-share skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Cloud / ETL Services</h1>
+                <span class="skills__subtitle">Cloud | ETL | Data Management</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Streamlit, Heroku, Flask, Gradio</h3><span class="skills__number"
+                    style="font-size: 80%">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__DE"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">S3, Lambda, EC2</h3><span class="skills__number"
+                    style="font-size: 80%">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__aws"></span>
+                </div>
+              </div>
+              <!-- <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">MS Office</h3><span class="skills__number" style="font-size: 80%">90%</span></div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__office"></span></div>
+                                </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <!--==================== SKILLS 3 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-cloud-database-tree skills__icon"></i>
+              <div>
+                <h1 class="skills__title">AI-ML Frameworks</h1>
+                <span class="skills__subtitle">AI-ML Tools | NLP | Deep Learning</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">OpenAI, LangChain, LLM, GPT, Gemini, HF</h3><span class="skills__number"
+                    style="font-size: 80%">72%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__gpt"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">TensorFlow, Karas, VectorDB</h3><span class="skills__number"
+                    style="font-size: 80%">65%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__tensor"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--==================== SKILLS 4 ====================-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-server-network-alt skills__icon"></i> <!-- uil-cloud  -->
+              <div>
+                <h1 class="skills__title">IDE / Tools</h1>
+                <span class="skills__subtitle">Platforms | SDK | Workflows</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Jupyter Notebooks, VS Code</h3><span class="skills__number"
+                    style="font-size: 80%">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__notebooks"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Google Colab, GitHub, Web API</h3><span class="skills__number"
+                    style="font-size: 80%">65%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__postman"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Window, Linux, Jira, O365 </h3><span class="skills__number"
+                    style="font-size: 80%">60%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__windows"></span>
+                </div>
+              </div>
+              <!-- <div class="skills__data">
+                                <div class="skills__titles">
+                                   <h3 class="skills__name">WordPress</h3><span class="skills__number" style="font-size: 80%">70%</span></div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__wordpress"></span></div>
+                           </div> -->
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification__section" id="qua">
+      <h2 class="section__title">◜Qualification◞</h2>
+      <span class="section__subtitle">⦿ My Personal Journey ⦿</span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div class="qualification__button button--flex qualification__active" data-target='#education'>
+            <i class="uil uil-graduation-cap qualification__icon"></i>
+            Education
+          </div>
+          <div class="qualification__button button--flex" data-target="#work">
+            <i class="uil uil-briefcase-alt qualification__icon"></i>
+            Work
+          </div>
+          <div class="qualification__button button--flex" data-target="#certification">
+            <i class="uil uil-award-alt qualification__icon"></i>
+            Certification
+          </div>
+        </div>
+
+        <div class="qualification__sections">
+          <!--==================== QUALIFICATION CONTENT 1 ====================-->
+          <div class="qualification__content qualification__active" data-content id="education">
+            <!--==================== QUALIFICATION 1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Graduation</h3>
+                <span class="qualification__subtitle">Selvamm Arts and Science College - Namakkal</span>
+                <div class="qualification__calendar">
+                  Bachelor of Computer Science<p>
+                    <i class="uil uil-calendar-alt"></i>
+                    2015 <a href="https://selvamarts.edu.in/" target="_blank" class="home__social-icon">
+                      <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Higher Secondary</h3>
+                <span class="qualification__subtitle">Government Higher Secondary School, Pottireddipatty, Namakkal</span>
+                <div class="qualification__calendar">
+                  Science Student<p>
+                    <i class="uil uil-calendar-alt"></i>
+                    2012
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION 3 ====================-->
+           
+          </div>
+
+          <!--==================== QUALIFICATION CONTENT 2 ====================-->
+          <div class="qualification__content" data-content id="work">
+            <!--==================== QUALIFICATION 1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Software Developer</h3>
+                <span class="qualification__subtitle">Spritle Software, Chennai</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018 - Present <a href="https://www.spritle.com/" target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION 2 ====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Software Engineer</h3>
+                <span class="qualification__subtitle">LeatherTrade, Chennai</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2017 - 2018 <a href="https://www.linkedin.com/company/leathertrade/about/" target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION 3 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Junior Software Engineer</h3>
+                <span class="qualification__subtitle">ITBEEZONE Software Solutions, Chennai</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2015 - 2017 <a href="https://www.facebook.com/people/ITBeeZone-Business-Solutions/100066503922261/" target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+            
+          </div>
+
+          <!--==================== QUALIFICATION CONTENT 3  ====================-->
+          <div class="qualification__content" data-content id="certification">
+
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Introduction to Generative AI</h3>
+                <div class="qualification__calendar">Google Badges
+                  <a href="https://www.cloudskillsboost.google/public_profiles/7d0c6423-38b9-4c84-a74c-dd5111e32698/badges/4661057"
+                    target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span><span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span><span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Introduction to Large Language Models</h3>
+                <div class="qualification__calendar">Google Badges
+                  <a href="https://www.cloudskillsboost.google/public_profiles/7d0c6423-38b9-4c84-a74c-dd5111e32698/badges/4663071"
+                    target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Introduction to Responsible AI</h3>
+                <div class="qualification__calendar">Google Badges
+                  <a href="https://www.cloudskillsboost.google/public_profiles/7d0c6423-38b9-4c84-a74c-dd5111e32698/badges/4663667"
+                    target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span><span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span><span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Generative AI Fundamentals</h3>
+                <div class="qualification__calendar">Google Badges
+                  <a href="https://www.cloudskillsboost.google/public_profiles/7d0c6423-38b9-4c84-a74c-dd5111e32698/badges/4665659"
+                    target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Introduction to Image Generation</h3>
+                <div class="qualification__calendar">Google Badges
+                  <a href="https://www.cloudskillsboost.google/public_profiles/7d0c6423-38b9-4c84-a74c-dd5111e32698/badges/4665778"
+                    target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span><span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span><span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Encoder-Decoder Architecture</h3>
+                <div class="qualification__calendar">Google Badges
+                  <a href="https://www.cloudskillsboost.google/public_profiles/7d0c6423-38b9-4c84-a74c-dd5111e32698/badges/4667659"
+                    target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Attention Mechanism</h3>
+                <div class="qualification__calendar">Google Badges
+                  <a href="https://www.cloudskillsboost.google/public_profiles/7d0c6423-38b9-4c84-a74c-dd5111e32698/badges/4667781"
+                    target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span><span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span><span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Transformer Models and BERT Model</h3>
+                <div class="qualification__calendar">Google Badges
+                  <a href="https://www.cloudskillsboost.google/public_profiles/7d0c6423-38b9-4c84-a74c-dd5111e32698/badges/4670993"
+                    target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Create Image Captioning Models</h3>
+                <div class="qualification__calendar">Google Badges
+                  <a href="https://www.cloudskillsboost.google/public_profiles/7d0c6423-38b9-4c84-a74c-dd5111e32698/badges/4671142"
+                    target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span><span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span><span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Introduction to Vertex AI Studio</h3>
+                <div class="qualification__calendar">Google Badges
+                  <a href="https://www.cloudskillsboost.google/public_profiles/7d0c6423-38b9-4c84-a74c-dd5111e32698/badges/4673941"
+                    target="_blank" class="home__social-icon">
+                    <i class="uil uil-external-link-alt" style="font-size: 0.73em"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== TESTIMONIAL ====================-->
+    <section class="section" id="Testimonial">
+      <h2 class="section__title">◜Testimonials◞</h2>
+      <span class="section__subtitle">⦿ Connections Hand-shaking And Saying About Me ⦿</span>
+      <section class="testimonial-container z-depth-3">
+        <div class="progress-bar"></div>
+        <div class="fas fa-quote-right fa-quote"></div>
+        <div class="fas fa-quote-left fa-quote"></div>
+        <p class="testimonial">
+          I had the pleasure of working with Karthick on a project involving Google Vertex AI to build a Generative AI chatbot for a POC. His knowledge and expertise were evident from the start. What impressed me the most was his eagerness to explore and learn more, which added immense value to our project. His contributions were instrumental in the successful completion of our chatbot project. I highly recommend him for his professionalism, depth of knowledge, and willingness to go the extra mile. Looking forward to collaborating on future projects!.
+        </p>
+        <div class="user">
+          <img src="./packages/images/Arun.jpg" alt="user" class="user-image" />
+          <div class="user-details">
+            <h4 class="username"> » Arun </h4>
+            <p class="role">» Lead Developer <small><class style="font-family:courier"></style></p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Karthick N</h1>
+          <span class="footer__subtitle">『 Web/AI Developer 』</span>
+        </div>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="footer__link">About</a>
+          </li>
+          <li>
+            <a href="#Testimonial" class="footer__link">Testimonials</a>
+          </li>
+        </ul>
+
+        <div class="footer__socials" , align=right>
+          <a href="https://github.com/karthick965938" target="_blank" class="footer__social">
+            <i class="uil uil-github-alt"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=karthick965938@gmail.com" target="_blank"
+            class="footer__social">
+            <i class="uil uil-envelope-alt"></i></a>
+          <a href="https://www.linkedin.com/in/karthick-nagarajan-44800710b/" target="_blank" class="footer__social">
+            <i class="uil uil-linkedin"></i></a>
+          <a href="https://www.google.com/maps/place/Chennai,+Tamil+Nadu" target="_blank" class="footer__social">
+            <i class="uil uil-location-pin-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <script>
+    function toggle() {
+      let blur = document.getElementById('blur'),
+        popup = document.getElementById('popup');
+
+      blur.classList.toggle('active');
+      popup.classList.toggle('active');
+      document.getElementById("listUL").innerHTML = "";
+      startFunction()
+    }
+
+    function myFunctionS() {
+      const countVisitors = document.getElementById('count_visitors');
+      let count = Number(localStorage.getItem('count')) || new Date().getDate();
+      localStorage.setItem('count', count + 1);
+      countVisitors.innerHTML = " Portfolio visitors: " + (count + 1) + "+";
+    }
+  </script>
+
+  <script src="./packages/js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="./packages/js/jquery.easing.1.3.js"></script>
+  <!-- Waypoints -->
+  <script src="./packages/js/jquery.waypoints.min.js"></script>
+  <!-- Flexslider -->
+  <script src="./packages/js/jquery.flexslider-min.js"></script>
+  <!-- Owl carousel -->
+  <script src="./packages/js/owl.carousel.min.js"></script>
+  <!-- Counters -->
+  <script src="./packages/js/jquery.countTo.js"></script>
+  <!--==================== SWIPER JS ====================-->
+  <script src="./packages/js/swiper-bundle.min.js"></script>
+  <!--==================== MAIN JS ====================-->
+  <script src="./packages/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/b961f1cbcd.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+</body>
+
+</html>

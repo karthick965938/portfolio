@@ -1,0 +1,520 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"); */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+
+.containerA {
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition: 0.5s; */
+}
+
+.containerA#blur.active {
+  pointer-events: none;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.6;
+  background-color: white;
+  z-index: 101;
+}
+
+.containerA .content {
+  position: relative;
+  max-width: 800px;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.containerA .content img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* body{
+  padding-top: 1vh;
+  background-color: #1b1b1b;
+  background-size: unset;
+  background-repeat: repeat;
+  height: 98vh;
+} */
+
+/* nav{
+  display: flex;
+  height: 6%;
+  background-color: #202c33;
+} */
+
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #202c33;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+
+.dpimg{
+  cursor: pointer;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.navbar .personalInfo {
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.personalInfo #name{
+  color: #e9edef;
+  margin-bottom: 4px;
+}
+
+.personalInfo #lastseen{
+  color: #8696a0;
+  font-size: small;
+}
+
+.scrollable{
+  overflow-y: scroll;
+  color: #fff;
+  display: flex;
+  height: calc(100% - 130px);
+  flex-direction: column;
+  background-image: url('../images/bg.webp');
+  align-items: flex-end;
+  position: relative;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  position: relative;
+  padding: 0 10px;
+}
+
+.scrollable .chatting{
+  overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width:none; 
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.scrollable .chatting::-webkit-scrollbar {
+  display: none;
+}
+
+#listUL{
+  overflow-y: hidden;
+  position: static;
+  width: 100%;
+  bottom: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#listUL li{
+  width: 100%;
+  text-decoration: none;
+  flex-direction: row-reverse;
+}
+
+.sent{
+  text-align: end;
+  float: right;
+  width: auto;
+  max-width: 75%;
+}
+
+.green{
+  margin: 5px;
+  text-align: start;
+  width: auto;
+  padding: 10px;
+  background-color: #005c4b;
+  border-radius: 15px 15px 0px;
+  font-size: 0.8rem;
+}
+
+#sentlabel{
+  color: #94bab3;
+  display: block;
+  text-align: end;
+  font-size: x-small;
+}
+
+.recieved{
+  float: left;
+  width: 45%;
+  max-width: 45%;
+  background-color: red;
+}
+
+.grey{
+  max-width: 75%;
+  margin: 5px;
+  text-align: start;
+  width: auto;
+  padding: 10px;
+  background-color: #202c33;
+  border-radius: 0px 15px 15px;
+  font-size: 0.8rem;
+}
+
+.grey .mapview{
+  margin: auto;
+  display: flex;
+  padding: 5px;
+}
+
+.add address{
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.map{
+  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.dateLabel{
+  color: #94bab3;
+  display: block;
+  text-align: end;
+  font-size: x-small;
+}
+
+
+/* help menu bold words color  */
+
+.sk .bold{
+  color: goldenrod;
+}
+
+
+/* resume thumbnail in received class*/
+.resumeThumbnail{
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.downloadSpace{
+  background-color: #1d282f;
+  display: flex;
+  width: 100%;
+}
+.downloadSpace .pdfname{
+  display: flex;
+  width: 100%;
+}
+.pdfname label{
+  margin: auto 0px;
+}
+.downloadSpace img{
+  width: 30px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* this css is used for embedded html in messages */
+.bold{
+  font-weight: 1000;
+}
+
+.alink{
+  color: goldenrod;
+  transition: all 600ms ease;
+  text-decoration: none;
+}
+
+.alink:hover{
+  text-decoration: none;
+  color: green;
+}
+
+/* this css is used for social links message */
+
+.social{
+  padding: 10px;
+}
+
+.social .socialItem{
+  width: 100%;
+  border-radius: 10px;
+  background-color: #94bab3;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 10px;
+  transition: all 500ms ease-in-out;
+  padding: 5px;
+}
+
+.social .socialItemI{
+  margin: auto;
+  padding: 8px;
+  flex-direction: column;
+  width: 10%;
+  height: 35px;
+}
+
+.social .socialItem:hover{
+  background-color: rgba(58, 170, 58, 0.863);
+}
+#call{
+  flex-direction: column;
+  text-align: center;
+}
+
+.number{
+  display: none;
+}
+
+.scrollable .fullScreenDP{
+  transition: all 700ms ease-in-out;
+  position: absolute;;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  background-color: #2f2f2fec;
+  z-index: 1000;
+}
+
+.scrollable .fullScreenDP .insideDP{
+  display: flex;
+  margin: auto;
+  scrollbar-width: 0px;
+}
+
+.closeBTN{
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  margin-left: 6%;
+  margin-top: 5px;
+  cursor: pointer;
+  
+}
+
+.btnColor{
+  fill: rgba(0, 0, 0, 0.692);
+  transition: all 400ms ease-in-out;
+}
+
+.closeBTN:hover .btnColor{
+  fill: red;
+}
+
+.scrollable .fullScreenDP .insideDP .dp{
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.footerChat{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: auto;
+  background-color: #202c33;
+  text-align: center;
+}
+
+.sendBar{
+  display: flex;
+  width: 100%;
+  margin: 5px auto 0;
+}
+
+.sendBar svg{
+  margin: auto;
+  height: 40%;
+  min-height: 40%;
+  cursor: pointer;
+}
+
+.sendBar input[type='text']{
+  margin: auto;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  float: left;
+  width: calc(100% - 50px);
+  height: 100%;
+  outline-color: transparent;
+  accent-color: transparent;
+  background-color: #2a3942;
+  outline: none;
+  border-color: transparent;
+}
+::placeholder { 
+  color: #8696a0;
+  opacity: 1; 
+}
+:-ms-input-placeholder { 
+  color: #8696a0;
+}
+::-ms-input-placeholder { 
+  color: #8696a0;
+}
+
+@media screen and (min-width: 1024px) {
+  .scrollable{
+      -ms-overflow-style: none; 
+      scrollbar-width: none; 
+      position: relative;
+      overflow: hidden;
+  }
+  .scrollable .fullScreenDP{
+      display: none;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+  }
+
+  .scrollable .fullScreenDP .insideDP{
+      display: flex;
+      width: 70%;
+  }
+
+  .scrollable .fullScreenDP .dp{
+      width: 50%;
+      margin: auto;
+  }
+
+  .scrollable .closeBTN{
+      margin-top: 15px;
+  }
+
+  #call:hover .number{
+      display: block;
+      height: auto;
+  }
+}
+
+/* kk ---- */
+.PopupCloseBtn {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  display: inline-block;
+  background-color: red;
+  color: #ffff;
+  padding: 0.1rem;
+  border-radius: 0.3rem;
+  font-size: 0.7rem;
+}
+
+.PopupCloseBtn:hover {
+  background-color: var(--first-color-alt);
+}
+
+.PopupCloseBtn__icon {
+  font-size: 0.7rem;
+  margin-left: 1.2px;
+  transition: 0.3s;
+}
+
+.PopupCloseBtn1 {
+  position: absolute;
+  right: 35px;
+  top: 20px;
+  display: inline-block;
+  background-color: yellowgreen;
+  color: #ffff;
+  padding: 0.1rem;
+  border-radius: 0.3rem;
+  font-size: 0.7rem;
+  
+}
+
+.PopupCloseBtn1:hover {
+  background-color: var(--first-color-alt);
+}
+
+#popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background-color: #1b1b1b;
+  background-size: unset;
+  background-repeat: repeat;
+  height: 90vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 655px) {
+  #popup {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #popup {
+    padding: 20px;
+  }
+  #popup h2 {
+    font-size: 1.25rem;
+  }
+  #popup p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #popup h2 {
+    font-size: 1rem;
+  }
+  #popup p {
+    font-size: 0.75rem;
+  }
+}
